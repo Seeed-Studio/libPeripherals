@@ -6,9 +6,36 @@ This repository contains the symbols and the headers for the Seeed's Android sys
 
 Usage
 =====
-- donwload the libPeripherials to your project `app/libs` directory.
+- donwload the libPeripherials to your project `app/libs` directory. The project file directory should look like this.  
 ```
-git clone https://github.com/Seeed-Studio/libPeripherals
+.
+├── HelloGrove.iml
+├── app
+│   ├── CMakeLists.txt
+│   ├── app.iml
+│   ├── build
+│   │   ├── generated
+│   │   ├── intermediates
+│   │   └── outputs
+│   ├── build.gradle
+│   ├── libs
+│   │   └── libPeripherals
+│   ├── proguard-rules.pro
+│   └── src
+│       ├── androidTest
+│       ├── main
+│       └── test
+├── build.gradle
+├── gradle
+│   └── wrapper
+│       ├── gradle-wrapper.jar
+│       └── gradle-wrapper.properties
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+├── local.properties
+└── settings.gradle
+
 ```
 - Add the following lines to the native project `CMakeLists.txt`:
 ```
