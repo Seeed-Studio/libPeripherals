@@ -77,7 +77,7 @@
 
 # Find the libperipheralman header files.
 find_path(PERIPHERAL_INCLUDE_DIR
-          NAMES peripheralmanager/peripheral_manager_client.h
+          NAMES pio/peripheral_manager_client.h
           HINTS "${PERIPHERAL_DIR}" "${CMAKE_CURRENT_LIST_DIR}"
           PATH_SUFFIXES "${ANDROID_ABI}/include"
           NO_CMAKE_FIND_ROOT_PATH)
