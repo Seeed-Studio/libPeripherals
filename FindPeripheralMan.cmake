@@ -79,14 +79,14 @@
 find_path(PERIPHERAL_INCLUDE_DIR
           NAMES pio/peripheral_manager_client.h
           HINTS "${PERIPHERAL_DIR}" "${CMAKE_CURRENT_LIST_DIR}"
-          PATH_SUFFIXES "${ANDROID_ABI}/include"
+          PATH_SUFFIXES "include"
           NO_CMAKE_FIND_ROOT_PATH)
 
 # Find the libperipheralman.so library.
 find_library(PERIPHERAL_LIBRARY
              NAMES libperipheralman.so
              HINTS "${PERIPHERAL_DIR}" "${CMAKE_CURRENT_LIST_DIR}"
-             PATH_SUFFIXES "${ANDROID_ABI}/lib"
+             PATH_SUFFIXES "${ANDROID_ABI}/"
              NO_CMAKE_FIND_ROOT_PATH)
 
 # Register the package and set PERIPHERAL_FOUND.
